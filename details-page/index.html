@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="../index.html">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="../images/logo.jpg"></a>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">ICOs</a>
+            <a href="#">Airdrops</a>
+            <a href="#">News</a>
+            <a href="#">Guides</a>
+            <a href="#">Hire Experts</a>
+            <a href="#">Login</a>
+        </div>
+
+        <div id="menu-bar">
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">ICOs</a></li>
+                <li><a href="#">Airdrops</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+    </nav>
+    <header>
+        <h4 class="detail-1">BTC/USD<br>
+            $8,342.82</h4>
+        <h4 class="detail-2">Cryptocurrencies<br>
+            1554</h4>
+        <h4 class="detail-3">24h volume<br>
+            $54 B</h4>
+        <h4 class="detail-4">AltCoin M.Cap<br>
+            $80.7 B</h4>
+        <h4 class="detail-5">Total M.Cap<br>
+            $231.2 B</h4>
+    </header>
+    <div class="detail-search">
+        <div class="detail">
+            <a href="../index.html">
+                <img class="left_arrow" src="../images/arrow-left.svg">
+            </a>
+            <img class="bch" src="../images/bitcoin-btc.png">
+            <h4 class="first-h4">Bitcoin(BTC)</h4>
+            <h4 class="second-h4">$7,644.85</h4>
+            <img class="down-arrow" src="../images/down_arrow_red.png">
+            <h4 class="third-h4">-4.74%</h4>
+        </div>
+        <div class="search">
+            <div class="input">
+                <img class="search-icon" src="../images/search-solid.svg">
+                <input type="text" placeholder="Search Coin">
+            </div>
+            <a class="usd" href="#">USD</a>
+            <a class="camera" href="#"><img src="../images/camera-solid.svg"></a>
+            <a class="star" href="#"><img src="../images/star-solid.svg"></a>
+        </div>
+    </div>
+    <div class="currency">
+        <h4 class="btc-text">BTC</h4>
+        <input type="number">
+        <img class="currency-img" src="../images/exchange-alt-solid.svg">
+        <select>
+            <option>AUD</option>
+            <option>BRL</option>
+            <option>CAD</option>
+            <option>GBP</option>
+            <option>HKD</option>
+            <option>IDR</option>
+            <option>INR</option>
+            <option>JPY</option>
+            <option>KRW</option>
+            <option>PLN</option>
+            <option>TRY</option>
+            <option>USD</option>
+            <option>ZAR</option>
+        </select>
+        <input type="number">
+    </div>
+    <div class="outer-link">
+        <a class="basic link" href="#">Basic</a>
+        <a class="advance link" href="#">Advance</a>
+    </div>
+    <div class="graph-container">
+        <div class="graph-detail">
+            <div class="text-link">
+                <h5 style="display: inline-block">Zoom</h5>
+                <a href="#">1d</a>
+                <a href="#">1w</a>
+                <a href="#">1m</a>
+                <a href="#">3m</a>
+                <a href="#">YTD</a>
+                <a href="#">1Y</a>
+                <a href="#">All</a>
+            </div>
+            <div class="graph">
+                <div class="price-details">
+                    <div class="graph-pic">
+                        <img src="../images/graph-pic.png">
+                    </div>
+                    <div class="price-detail">
+                        <div class="price-details-one">
+                            <h5 class="price">price</h5>
+                            <h3>$7,272.56</h3>
+                            <h5><img class="btc-icon" src="../images/btc-icon.svg">1.000000<img class="white-down-arrow"
+                                    src="../images/down_arrow.png">-4.66%</h5>
+                        </div>
+                        <div class="price-details-two">
+                            <h5><img class="white-down-arrow" src="../images/down_arrow.png">24 Hr. High</h5>
+                            <h3>$7,730.47</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="low-container low-con-one">
+        <h5 class="price">price</h5>
+        <div>
+            <h3>$7,272.56</h3>
+            <h6 class="first-text"><img class="btc-icon" src="../images/btc-icon.svg">1.000000<img
+                    class="white-down-arrow" src="../images/down_arrow.png">-4.66%</h6>
+        </div>
+    </div>
+    <div class="low-container low-con-two">
+        <h5><img class="white-down-arrow" src="../images/up_arrow.png">24 Hr. High</h5>
+        <h3>$7,730.47</h3>
+    </div>
+    <div class="low-container low-con-three">
+        <h5><img class="white-down-arrow" src="../images/down_arrow.png">24 Hr. Low</h5>
+        <h3>$6,795.34</h3>
+    </div>
+    <div class="low-container low-con-four">
+        <h5>Circulating Supply</h5>
+        <h3>18.06 M</h3>
+    </div>
+    <div class="low-container low-con-five">
+        <h5>Market Cap.</h5>
+        <h3>$131.36 B</h3>
+    </div>
+    <div class="low-container low-con-six">
+        <h5>24 Hr. Volume</h5>
+        <h3>$34.51 B</h3>
+    </div>
+    <div class="lower-container">
+        <div class="low-con low-con-one">
+            <h5>Circulating Supply</h5>
+            <h3>18.06 M</h3>
+        </div>
+        <div class="low-con low-con-two">
+            <h5>Market Cap.</h5>
+            <h3>$131.36 B</h3>
+        </div>
+        <div class="low-con low-con-three">
+            <h5>24 Hr. Volume</h5>
+            <h3>$34.51 B</h3>
+        </div>
+        <div class="low-con low-con-four">
+            <h5><img class="white-down-arrow" src="../images/down_arrow.png">24 Hr. Low</h5>
+            <h3>$6,795.34</h3>
+        </div>
+    </div>
+    <div class="drop-down-menu">
+        <div class="drop-container">
+            <div class="drop-down drop-down-one">
+                <h3>About</h3>
+                <img class="drop-down-img-one drop-down-img" src="../images/angle-arrow.png">
+                <div class="drop-down-para">
+                    <p>Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing
+                        transactions
+                        and the issuing of bitcoins is carried out collectively by the network. Although other
+                        cryptocurrencies
+                        have come before, Bitcoin is the first decentralized cryptocurrency - Its reputation has spawned
+                        copies
+                        and evolution in the space.</p>
+                    <p>
+                        With the largest variety of markets and the biggest value - having reached a peak of 18 billion
+                        USD
+                        -
+                        Bitcoin is here to stay. As with any new invention, there can be improvements or flaws in the
+                        initial
+                        model however the community and a team of dedicated developers are pushing to overcome any
+                        obstacle
+                        they
+                        come across. It is also the most traded cryptocurrency and one of the main entry points for all
+                        the
+                        other cryptocurrencies. The price is as unstable as always and it can go up or down by 10%-20%
+                        in a
+                        single day.</p>
+                    <p>
+                        Bitcoin is an SHA-256 POW coin with 21,000,000 total minable coins. The block time is 10
+                        minutes.
+                        See
+                        below for a full range of Bitcoin markets where you can trade US Dollars for Bitcoin, crypto to
+                        Bitcoin
+                        and many other fiat currencies too.</p>
+                    <h6>Important Links</h6>
+                    <div class="icon-link">
+                        <div class="d-flex">
+                            <a href="#"><img class="icon-link-one" src="../images/globe.svg"><br>Website</a>
+                            <a href="#"><img class="icon-link-two" src="../images/globe.svg"><br>Explorer</a>
+                            <a href="#"><img class="icon-link-three" src="../images/comments.svg"><br>Forum</a>
+                            <a href="#"><img class="icon-link-four" src="../images/github.svg"><br>Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="drop-down drop-down-three">
+                <h3>Reddit Feed</h3>
+                <img class="drop-down-img-three drop-down-img" src="../images/angle-arrow.png">
+                <div class="drop-down-content">
+                    <div class="reddit-post">
+                        <div class="reddit-info">
+                            <a href="#"><img class="reddit-info-img" src="../images/reddit.gif"></a>
+                            <h4>links from</h4>
+                            <a href="#">
+                                <h4>Bitcoin.reddit.com</h4>
+                            </a>
+                        </div>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">AMA Bitcoin Mining / Stratum V2
+                            — We are Braiins,
+                            the company behind Slush Pool and
+                            Stratum V2. We’re joined by Matt Corallo and Peter Todd. Ask us anything!
+                            <br> 141 points | 109 comments</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Daily Discussion, November 26, 2019
+                            <br> 12 points | 4 comments</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Microsoft Allows BTC Payments
+                            <br> 1395 points | 113 comments</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Current governments were never designed for a world of connectivity that both the internet
+                            and bitcoin enables.
+                            Bitcoin is the largest peaceful protest in history. <br>267 points | 18 comments</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Poland Repatriates 100 Tons of Gold From Bank of England Storage. Nothing unusual, right?
+                            <br> 13 points | 3 commentss</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Poland Repatriates 100 Tons of Gold From Bank of England Storage. Nothing unusual, right?
+                            <br> 13 points | 3 commentss</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Poland Repatriates 100 Tons of Gold From Bank of England Storage. Nothing unusual, right?
+                            <br> 13 points | 3 commentss</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Poland Repatriates 100 Tons of Gold From Bank of England Storage. Nothing unusual, right?
+                            <br> 13 points | 3 commentss</a><br>
+                        <a href="#"><img src="../images/up-down.gif">
+                            Poland Repatriates 100 Tons of Gold From Bank of England Storage. Nothing unusual, right?
+                            <br> 13 points | 3 commentss</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Daily Discussion, November 26, 2019
+                            <br> 12 points | 4 comments</a><br>
+                        <a href="#"><img class="up-down-img" src="../images/up-down.gif">
+                            Microsoft Allows BTC Payments
+                            <br> 1395 points | 113 comments</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="drop-down drop-down-two">
+            <h3>Bitcoin Guide</h3>
+            <img class="drop-down-img-two drop-down-img" src="../images/angle-arrow.png">
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/Um63OQz3bjo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h6>Important Articles</h6>
+                <div class="posts">
+                    <div class="post post-1">
+                        <img src="../images/cointopper-blog.jpg">
+                        <h4> Bitcoin vs Gold: Who wins?</h4>
+                        <p>Ultimate comparison of Bitcoin Vs Gold after Steve Wozniak commented t...</p>
+                    </div>
+
+                    <div class="post post-2">
+                        <img src="../images/cointopper-blog2.jpg">
+                        <h4> What is Bitcoin Private?</h4>
+                        <p>Bitcoin Private: Complete guide Bitcoin cryptocurrency is too popular...</p>
+                    </div>
+                    <div class="post post-3">
+                        <img src="../images/cointopper-blog3.jpg">
+                        <h4> What is the Lightning Network?</h4>
+                        <p>Each and every person who has invested in Bitcoin directly or indirect...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="blog-info">
+        <h2>News</h2>
+        <a href="#">View All</a>
+    </div>
+    <div class="blog-posts">
+        <div class="blog-post post-1">
+            <img src="../images/post-img1.jpg">
+            <h4>How to avoid scams in ICO</h4>
+            <p>The top steps to avoid scammy ICOs is be doing your research...</p>
+        </div>
+        <div class="blog-post post-2">
+            <img src="../images/post-img2.jpg">
+            <h4>How to avoid scams in ICO</h4>
+            <p>The top steps to avoid scammy ICOs is be doing your research...</p>
+        </div>
+        <div class="blog-post post-3">
+            <img src="../images/post-img3.jpg">
+            <h4>How to avoid scams in ICO</h4>
+            <p>The top steps to avoid scammy ICOs is be doing your research...</p>
+        </div>
+        <div class="blog-post post-3">
+            <img src="../images/post-img1.jpg">
+            <h4>How to avoid scams in ICO</h4>
+            <p>The top steps to avoid scammy ICOs is be doing your research...</p>
+        </div>
+        <!-- <div class="blog-post post-2">
+                <img src="../images/post-img1.jpg">
+                <h4>How to avoid scams in ICO</h4>
+                <p>The top steps to avoid scammy ICOs is be doing your research...</p>
+            </div>
+            <div class="blog-post post-3">
+                <img src="../images/post-img3.jpg">
+                <h4>How to avoid scams in ICO</h4>
+                <p>The top steps to avoid scammy ICOs is be doing your research...</p>
+            </div> -->
+    </div>
+    <footer class="upper-footer">
+        <div class="uf one">
+            <img src="../images/footer_logo.png">
+            <a href="#">
+                <h5>About</h5>
+            </a>
+            <a href="#">
+                <h5>Contact</h5>
+            </a>
+            <a href="#">
+                <h5>Advertise</h5>
+            </a>
+            <a href="#">
+                <h5>Hire Experts</h5>
+            </a>
+            <a href="#">
+                <h5>Terms of Use</h5>
+            </a>
+            <a href="#">
+                <h5>Privacy Policy</h5>
+            </a>
+        </div>
+        <div class="uf two">
+            <h4>Cryptocurrency</h4>
+            <a href="#">
+                <h5>Bitcoin</h5>
+            </a>
+            <a href="#">
+                <h5>Ethereum</h5>
+            </a>
+            <a href="#">
+                <h5>Ripple</h5>
+            </a>
+            <a href="#">
+                <h5>Tether</h5>
+            </a>
+            <a href="#">
+                <h5>Bitcoin Cash</h5>
+            </a>
+            <a href="#">
+                <h5>Submit Coin</h5>
+            </a>
+        </div>
+        <div class="uf three">
+            <h4>ICOs</h4>
+            <a href="#">
+                <h5>ACA Network</h5>
+            </a>
+            <a href="#">
+                <h5>AgroTechFarm</h5>
+            </a>
+            <a href="#">
+                <h5>CRYSTALS</h5>
+            </a>
+            <a href="#">
+                <h5>Coin Analyst</h5>
+            </a>
+            <a href="#">
+                <h5>INGOT COIN</h5>
+            </a>
+            <a href="#">
+                <h5>Submit ICO</h5>
+            </a>
+        </div>
+        <!-- <div class="uf four">
+            <h4>Cryptocurrency</h4>
+            <a href="#">
+                <h5>Bitcoin</h5>
+            </a>
+            <a href="#">
+                <h5>Ethereum</h5>
+            </a>
+            <a href="#">
+                <h5>Ripple</h5>
+            </a>
+            <a href="#">
+                <h5>Tether</h5>
+            </a>
+            <a href="#">
+                <h5>Bitcoin Cash</h5>
+            </a>
+            <a href="#">
+                <h5>Submit Coin</h5>
+            </a>
+        </div> -->
+        <div class="uf three">
+            <h4>Airdrops</h4>
+            <a href="#">
+                <h5>Tachain</h5>
+            </a>
+            <a href="#">
+                <h5>imusify</h5>
+            </a>
+            <a href="#">
+                <h5>Bidooh</h5>
+            </a>
+            <a href="#">
+                <h5>Spiking</h5>
+            </a>
+            <a href="#">
+                <h5>Efforce</h5>
+            </a>
+            <a href="#">
+                <h5>Submit Airdrop</h5>
+            </a>
+        </div>
+        <div class="uf five">
+            <h4>Crypto news & updates</h4>
+            <div class="five-link">
+                <a href="#">
+                    <img src="../images/footer-img1.jpg">
+                    <h5>US Federal Court: Cryptocurrencies to be treated as commodit...</h5>
+                    <p class="footer-news-date">October 05, 2018</p>
+                </a>
+            </div>
+            <div class="five-link">
+                <a href="#">
+                    <img src="../images/footer-img2.png">
+                    <h5>Coinbase Gets an Investment Boost of $500 Million from Tiger...</h5>
+                    <p class="footer-news-date">October 05, 2018</p>
+                </a>
+            </div>
+            <div class="five-link">
+                <a href="#">
+                    <img src="../images/footer-img3.jpg">
+                    <h5>Finally, Ripple's xRapid Goes Live</h5>
+                    <p class="footer-news-date">October 05, 2018</p>
+                </a>
+            </div>
+            <div class="five-link">
+                <a href="#">
+                    <img src="../images/footer-img4.jpg">
+                    <h5>XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</h5>
+                    <p class="footer-news-date">October 05, 2018</p>
+                </a>
+            </div>
+            <div class="five-link">
+                <a href="#">
+                    <img src="../images/footer-img5.jpg">
+                    <h5>New Google Update Challenges Cryptojackers</h5>
+                    <p class="footer-news-date">October 05, 2018</p>
+                </a>
+            </div>
+        </div>
+        <div class="mail">
+            <a class="newsletter" href="#">
+                <h5>Newsletter</h5>
+            </a>
+            <input type="text" placeholder="Your Email">
+            <a class="submit" href="#"><img class="arrow-img" src="../images/arrow-right-solid.svg"></a>
+        </div>
+        <div class="download-app">
+            <h5>Downlaod</h5>
+            <img class="android" src="../images/android_app_icon.png">
+            <img class="ios" src="../images/ios_app_icon.png">
+        </div>
+    </footer>
+    <footer class="lower-footer">
+        <p>© Copyright 2018. All Rights Reserved.</p>
+        <p>Made with <img class="red-heart-img" src="../images/red-heart.png"> for the Decentralized World</p>
+        <p>
+            <img class="icon-one icons" src="../images/facebook-f-brands.svg">
+            <img class="icon-two icons" src="../images/google-plus-brands.svg">
+            <img class="icon-three icons" src="../images/twitter-brands.svg">
+            <img class="icon-four icons" src="../images/instagram-brands.svg">
+            <img class="icon-five icons" src="../images/telegram-brands.svg">
+            <img class="icon-six icons" src="../images/youtube-brands.svg">
+        </p>
+        <div class="icon-container">
+            <img class="camera-icon" src="../images/camera-solid - Copy.svg">
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
