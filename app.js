@@ -39,3 +39,31 @@ $(document).ready(function(){
         ]
     });
   });
+
+  $(document).ready(function(){
+    $('.blog-posts').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay:  true,
+      speed: 300,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 450,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    }); 
+  });
