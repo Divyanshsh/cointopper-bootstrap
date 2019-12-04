@@ -5,11 +5,9 @@
 
 .main-nav{
     background: #fff;
-    height: 120px;
 }
 
 #mynav{
-    float: left;
     background: #fff;
 }
 
@@ -59,14 +57,17 @@
 
 button {
     display: block;
-    width: 9px;
-    height: 9px;
+    /* width: 9px;
+    height: 9px; */
     padding: 0;
     border: none;
     border-radius: 100%;
     background-color: #CDCED5 ;
-    text-indent: -9999px;
+    text-indent: -9999px !important;
     outline: none;
+}
+.btn-toggler{
+    text-indent:0px !important;
 }
 
 li.slick-active button {
@@ -105,7 +106,7 @@ li.slick-active button {
 
 .box{
     height: 77px;
-    width: 185px;
+    width: 97%;
     border-radius: 10px;
     margin-bottom: 26px;
 }
@@ -268,7 +269,7 @@ li.slick-active button {
 
 .blog-post{
     width: 33.3%;
-    height: 350px;
+    height: auto;
     border: 2px solid #CDCED5;
     border-radius: 15px;
     margin: 35px 30px 40px 30px;
@@ -289,7 +290,8 @@ li.slick-active button {
 .blog-post p{
     font-size: 16px;
     color: #3D3D3D;
-    margin: 20px 0 0 7px;
+    margin: 10px 0 0 7px;
+    padding: 10px 0;
 }
 
 .footer-cont{
@@ -351,13 +353,13 @@ li.slick-active button {
      padding: 3px 0;
  }
 
- .mail{
+ /* .mail{
     margin: -145px 0 30px 48px;
- }
+ } */
 
 .mail input{
     background-color: #bfc6cb;
-    width: 250px;
+    width: 50%;
     color: #fff;
     height: 36px;
     padding: 0 12px;
@@ -408,19 +410,19 @@ li.slick-active button {
 }
 
 .download-app img{
-    width: 150px;
-    height: 46px;
+    width: 40%;
+    height: 25%;
 }
 
 .lower-footer{
     background-color: #bfc6cb;
-    height: 70px;
+    height: auto;
 }
 
 .lower-footer p{
     color: #3d3d3d;
     font-size: 16px;
-    margin: 0 45px;
+    /* margin: 0 45px; */
 }
 
 .red-heart-img{
@@ -429,8 +431,8 @@ li.slick-active button {
 }
 
 .icons{
-    height: 15px;
-    width: 15px;
+    height: 35px;
+    width: 35px;
     padding: 7px;
     border-radius: 100%;
 }

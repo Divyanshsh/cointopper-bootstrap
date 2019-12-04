@@ -9,33 +9,26 @@ $(document).ready(function(){
         dots: true,
         responsive: [
             {
-              breakpoint: 1050,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-              }
-            },
-            {
-              breakpoint: 775,
+              breakpoint: 1020,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
               }
             },
             {
-                breakpoint: 680,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                }
-              },
-              {
-                breakpoint: 550,
+                breakpoint: 580,
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 1,
                 }
-              }
+              },
+            //   {
+            //     breakpoint: 550,
+            //     settings: {
+            //       slidesToShow: 2,
+            //       slidesToScroll: 1,
+            //     }
+            //   }
         ]
     });
   });
@@ -51,7 +44,7 @@ $(document).ready(function(){
       dots: true,
       responsive: [
         {
-          breakpoint: 600,
+          breakpoint: 770,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
