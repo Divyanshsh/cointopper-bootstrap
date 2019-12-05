@@ -28,24 +28,24 @@
 
 .cont{
     background: -webkit-linear-gradient(left,#1c60b8 1%,#3c99dd 100%);
-    float: left;
 }
 
 .cont h3{
     font-size: 15px;
     color: #fff;
     /* font-weight: 400; */
-    margin: 0 40px 0 40px;
+    /* margin: 0 40px 0 40px; */
 }
 
 .cont h5{
     color: #fff;
     font-size: 17px;
-    margin: 0 40px 0 40px;
+    /* margin: 0 40px 0 40px; */
 }
 
 .slick-dots li{
     margin: 4px;
+    color: #505050;
 }
 
 .slick-dots{
@@ -53,6 +53,8 @@
     justify-content: center;
     margin: 0;
     list-style-type: none;
+    color: black;
+
 }
 
 button {
@@ -63,9 +65,10 @@ button {
     border: none;
     border-radius: 100%;
     background-color: #CDCED5 ;
-    text-indent: -9999px !important;
+    text-indent: -9999px;
     outline: none;
 }
+
 .btn-toggler{
     text-indent:0px !important;
 }
