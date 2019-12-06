@@ -1,0 +1,47 @@
+@media screen and (max-device-width: 865px) and (min-device-width: 800px){
+    .icon-container{
+        position: fixed;
+        left: 93%;
+        top: 84%;
+    }
+}
+
+@media screen and (max-device-width: 800px) and (min-device-width: 700px){
+    .icon-container{
+        position: fixed;
+        left: 92%;
+        top: 84%;
+    }
+}
+
+@media screen and (max-device-width: 700px) and (min-device-width: 600px){
+    .icon-container{
+        position: fixed;
+        left: 91%;
+        top: 84%;
+    }
+}
+
+@media screen and (max-device-width: 600px) and (min-device-width: 500px){
+    .icon-container{
+        position: fixed;
+        left: 90%;
+        top: 84%;
+    }
+}
+
+@media screen and (max-device-width: 500px) and (min-device-width: 400px){
+    .icon-container{
+        position: fixed;
+        left: 88%;
+        top: 84%;
+    }
+}
+
+@media screen and (max-device-width: 400px) and (min-device-width: 325px){
+    .icon-container{
+        position: fixed;
+        left: 85%;
+        top: 84%;
+    }
+}
