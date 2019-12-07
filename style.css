@@ -112,6 +112,7 @@ li.slick-active button {
     width: 97%;
     border-radius: 10px;
     margin-bottom: 26px;
+    opacity: .9;
 }
 
 .box1{
