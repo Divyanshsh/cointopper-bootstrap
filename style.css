@@ -43,7 +43,7 @@
     /* margin: 0 40px 0 40px; */
 }
 
-.slick-dots li{
+/* .slick-dots li{
     margin: 4px;
     color: #505050;
 }
@@ -59,8 +59,8 @@
 
 button {
     display: block;
-    /* width: 9px;
-    height: 9px; */
+    width: 9px;
+    height: 9px;
     padding: 0;
     border: none;
     border-radius: 100%;
@@ -76,7 +76,7 @@ button {
 li.slick-active button {
     background-color: #505050;
     opacity: .8;
-}
+} */
 
 
 .cont-info h3{
@@ -273,8 +273,13 @@ li.slick-active button {
     opacity: .7;
 }
 
+.angle-up-arrow{
+    cursor: pointer;
+}
+
 .angle-down-arrow{
     display: none;
+    cursor: pointer;
 }
 
 /* .table-row:hover:last-child{

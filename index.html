@@ -8,7 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" href="/slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <title>cointopper</title>
@@ -54,24 +56,25 @@
     </nav>
 
     <div class="container-fluid cont">
-        <div class="row d-flex justify-content-around">
-            <div class="align-middle mr-0 ml-0 pt-3 pb-3">
+        <div class="row justify-content-between align-items-center pt-2 pb-2">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-0"></div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-2 pl-3 pl-md-0 pl-lg-0">
                 <h3 class="font-weight-normal">BTC/USD</h3>
                 <h5 class="font-weight-normal">$7669</h5>
             </div>
-            <div class="align-middle mr-0 ml-0 pt-3 pb-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-2">
                 <h3 class="font-weight-normal">Cryptocurrencies</h3>
                 <h5 class="font-weight-normal">1554</h5>
             </div>
-            <div class="align-middle mr-0 ml-0 pt-3 pb-3">
+            <div class="col-lg-2 col-md-3 col-sm-3 col-3">
                 <h3 class="font-weight-normal">24h volume</h3>
                 <h5 class="font-weight-normal">$65.9 B</h5>
             </div>
-            <div class="align-middle d-none d-lg-block mr-0 ml-0 pt-3 pb-3">
+            <div class="d-none d-lg-block col-lg-2 col-md-4-5">
                 <h3 class="font-weight-normal">AltCoin M.Cap</h3>
                 <h5 class="font-weight-normal">$73.1 B</h5>
             </div>
-            <div class="align-middle d-none d-lg-block mr-0 ml-0 pt-3 pb-3">
+            <div class="d-none d-lg-block col-lg-2 col-md-5-5">
                 <h3 class="font-weight-normal">Total M.Cap</h3>
                 <h5 class="font-weight-normal">$213.2 B</h5>
             </div>
@@ -79,7 +82,7 @@
     </div>
 
     <div class="container mb-3 header-sec">
-        <div class="row justify-content-between mr-3 ml-3 pt-4 align-items-center cont-info">
+        <div class="row justify-content-between mb-3 pt-4 ml-2 mr-2 ml-lg-0 mr-lg-0 mr-md-0 ml-md-0 align-items-center cont-info">
             <div>
                 <h3 class="cont-title">Top Viewed</h3>
             </div>
@@ -162,7 +165,7 @@
     </div>
 
     <div class="container pt-3 section">
-        <div class="row justify-content-between mr-3 ml-3">
+        <div class="row justify-content-between ml-2 mr-2 ml-lg-0 mr-lg-0 mr-md-0 ml-md-0">
             <div>
                 <h3>Cryptocurrencies</h3>
             </div>
@@ -176,12 +179,12 @@
     </div>
 
     <div class="container mt-4 justify-content-between">
-        <table class="table">
+        <table class="table" id="myTable">
             <thead>
                 <tr>
                     <th class="table-th pr-2 pl-2 pr-sm-0 pl-sm-0" scope="col">#</th>
                     <th class="table-th pr-2 pl-2 pr-sm-0 pl-sm-0" scope="col"></th>
-                    <th class="table-th pr-2 pl-2 pr-sm-0 pl-sm-0" scope="col">name<img class="angle-up-arrow"
+                    <th class="table-th pr-2 pl-2 pr-sm-0 pl-sm-0 clicking" scope="col">name<img class="angle-up-arrow"
                             src="./images/angle-arrow-up.png"><img class="angle-down-arrow"
                             src="./images/angle-arrow.png"></th>
                     <th class="table-th pr-2 pl-2 pr-sm-0 pl-sm-0" scope="col">change<img
@@ -197,13 +200,14 @@
                             src="./images/angle-arrow-up.png"></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr class="table-row1">
+            <tbody id="table-body">
+                <tr class="Bitcoin table-row1">
                     <td scope="row" class="coin-table pr-2 pl-2 pr-sm-0 pl-sm-0">1</td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="bit-logo table-image1"
-                                src="./images/BCH.svg"></a></td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href="#" class="names1">Bitcoin</a><br><span
-                                class="name"><a href="#" class="subNames1">BTC</a></span></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor table-image1"" href=" #"><img
+                                class="bit-logo" src="./images/BCH.svg"></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href="#"
+                                class="names1">Bitcoin</a><br><span class="name"><a href="#"
+                                    class="subNames1">BTC</a></span></a></td>
                     <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="arrow"
                                 src="./images/down_arrow_red.png">-0.33%</a>
                     </td>
@@ -215,14 +219,17 @@
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="graph"
                                 src="./images/graph-2.jpg"></a></td>
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#">12.29M</a></td>
-                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star1 hover-feature" src="../images/star-solid.svg"><img class="camera1 hover-feature" src="../images/camera-solid.svg"><a href="#" class="last-anchor1">$3.38B</a></a></td>
+                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star1 hover-feature"
+                                src="../images/star-solid.svg"><img class="camera1 hover-feature"
+                                src="../images/camera-solid.svg"><a href="#" class="last-anchor1">$3.38B</a></a></td>
                 </tr>
-                <tr class="table-row2">
+                <tr class="Ethereum table-row2">
                     <td scope="row" class="coin-table pr-2 pl-2 pr-sm-0 pl-sm-0">2</td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="bit-logo table-image2"
-                                src="./images/ethereum-eth.png"></a></td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href="" class="names2">Ethereum</a><br><span
-                                class="name"><a href="#" class="subNames2">ETH</a></span></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor table-image2" href="#"><img
+                                class="bit-logo" src="./images/ethereum-eth.png"></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href=""
+                                class="names2">Ethereum</a><br><span class="name"><a href="#"
+                                    class="subNames2">ETH</a></span></a></td>
                     <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="arrow"
                                 src="./images/down_arrow_red.png">-0.33%</a>
                     </td>
@@ -234,15 +241,18 @@
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="graph"
                                 src="./images/graph-2.jpg"></a></td>
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#">12.29M</a></td>
-                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star2 hover-feature" src="../images/star-solid.svg"><img class="camera2 hover-feature" src="../images/camera-solid.svg"><a href="#" class="last-anchor2">$3.38B</a></a></td>
+                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star2 hover-feature"
+                                src="../images/star-solid.svg"><img class="camera2 hover-feature"
+                                src="../images/camera-solid.svg"><a href="#" class="last-anchor2">$3.38B</a></a></td>
 
                 </tr>
-                <tr class="table-row3">
+                <tr class="Ripple table-row3">
                     <td scope="row" class="coin-table pr-2 pl-2 pr-sm-0 pl-sm-0">3</td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img
-                                class="bit-logo ripple-img table-image3" src="./images/ripple-xrp-new.png"></a></td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href="" class="names3">Ripple</a><br><span
-                                class="name"><a href="" class="subNames3">XRP</a></span></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor table-image3" href="#"><img
+                                class="bit-logo ripple-img" src="./images/ripple-xrp-new.png"></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href=""
+                                class="names3">Ripple</a><br><span class="name"><a href=""
+                                    class="subNames3">XRP</a></span></a></td>
                     <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="arrow"
                                 src="./images/down_arrow_red.png">-0.33%</a>
                     </td>
@@ -254,15 +264,17 @@
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="graph"
                                 src="./images/graph-2.jpg"></a></td>
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#">12.29M</a></td>
-                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star3 hover-feature" src="../images/star-solid.svg"><img class="camera3 hover-feature" src="../images/camera-solid.svg"><a href="#" class="last-anchor3">$3.38B</a></a></td>
+                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star3 hover-feature"
+                                src="../images/star-solid.svg"><img class="camera3 hover-feature"
+                                src="../images/camera-solid.svg"><a href="#" class="last-anchor3">$3.38B</a></a></td>
                 </tr>
-                </tr>
-                <tr class="table-row4">
+                <tr class="Tether table-row4">
                     <td scope="row" class="coin-table pr-2 pl-2 pr-sm-0 pl-sm-0">4</td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="bit-logo table-image4"
-                                src="./images/tether-usdt.png"></a></td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href="" class="names4">Tether</a><br><span
-                                class="name"><a href="" class="subNames4">USDT</a></span></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor table-image4" href="#"><img
+                                class="bit-logo" src="./images/tether-usdt.png"></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href=""
+                                class="names4">Tether</a><br><span class="name"><a href=""
+                                    class="subNames4">USDT</a></span></a></td>
                     <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="arrow"
                                 src="./images/down_arrow_red.png">-0.33%</a>
                     </td>
@@ -274,16 +286,18 @@
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="graph"
                                 src="./images/graph-2.jpg"></a></td>
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#">12.29M</a></td>
-                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star4 hover-feature" src="../images/star-solid.svg"><img class="camera4 hover-feature" src="../images/camera-solid.svg"><a href="#" class="last-anchor4">$3.38B</a></a></td>
+                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star4 hover-feature"
+                                src="../images/star-solid.svg"><img class="camera4 hover-feature"
+                                src="../images/camera-solid.svg"><a href="#" class="last-anchor4">$3.38B</a></a></td>
                 </tr>
-                </tr>
-                <tr class="table-row5">
+                <tr class="Bitcoin-cash table-row5">
                     <td scope="row" class="coin-table pr-2 pl-2 pr-sm-0 pl-sm-0">5</td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="bit-logo table-image5"
-                                src="./images/bitcoin-cash-bch.jpg"></a>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor5 table-image5" href="#"><img
+                                class="bit-logo" src="./images/bitcoin-cash-bch.jpg"></a>
                     </td>
-                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href="" class="names5">Bitcoin Cash</a><br><span
-                                class="name"><a href="" class="subNames5">BCH</a></span></a></td>
+                    <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor ascend-descend" href="#"><a href=""
+                                class="names5">Bitcoin Cash</a><br><span class="name"><a href=""
+                                    class="subNames5">BCH</a></span></a></td>
                     <td class="pr-2 pl-2 pr-sm-0 pl-sm-0"><a class="row-anchor" href="#"><img class="arrow"
                                 src="./images/down_arrow_red.png">-0.33%</a>
                     </td>
@@ -295,8 +309,9 @@
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="graph"
                                 src="./images/graph-2.jpg"></a></td>
                     <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#">12.29M</a></td>
-                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star5 hover-feature" src="../images/star-solid.svg"><img class="camera5 hover-feature" src="../images/camera-solid.svg"><a href="#" class="last-anchor5">$3.38B</a></a></td>
-                </tr>
+                    <td class="d-none d-lg-table-cell"><a class="row-anchor" href="#"><img class="star5 hover-feature"
+                                src="../images/star-solid.svg"><img class="camera5 hover-feature"
+                                src="../images/camera-solid.svg"><a href="#" class="last-anchor5">$3.38B</a></a></td>
                 </tr>
             </tbody>
         </table>
@@ -508,13 +523,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 
