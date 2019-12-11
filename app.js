@@ -191,23 +191,6 @@ tableRow5.addEventListener('mouseout', function () {
 
 // Sorting
 
-
-// let names1 = document.querySelector('.names1');
-// let subNames1 = document.querySelector('.subNames1');
-// let names2 = document.querySelector('.names2');
-// let subNames2 = document.querySelector('.subNames2');
-// let names3 = document.querySelector('.names3');
-// let subNames3 = document.querySelector('.subNames3');
-// let names4 = document.querySelector('.names4');
-// let subNames4 = document.querySelector('.subNames4');
-// let names5 = document.querySelector('.names5');
-// let subNames5 = document.querySelector('.subNames5');
-// let bitcoin = document.querySelector('.Bitcoin');
-// let ethereum = document.querySelector('.Ethereum');
-// let ripple = document.querySelector('.Ripple');
-// let tether = document.querySelector('.Tether');
-// let bitcoinCash = document.querySelector('.Bitcoin-cash');
-// let rowAnchor5 = document.querySelector('.row-anchor5');
 let angleUpArrow = document.querySelector('.angle-up-arrow');
 angleUpArrow.addEventListener('click', function () {
   let arrowDown = document.querySelector('.angle-down-arrow');
